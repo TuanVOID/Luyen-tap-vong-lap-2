@@ -1,0 +1,30 @@
+</head>
+<body>
+<p id="list"></p>
+<script>
+    function fibonacci() {
+        let num1 = 1;
+        let num2 = 0;
+        let temp;
+        for (i = 0; i < 20; i++ ) {
+            console.log(num1);
+            // document.write('list') = "num1";
+            temp = num1;
+            num1 = num1 + num2;
+            num2 = temp;
+        }
+    }
+    fibonacci();
+
+    function factorial() {
+        let a = +prompt(" nhap vao so can tinh giai thua");
+        let b = 1;
+        for (let i = 1; i < a; i++) {
+            b = a * i;
+        }
+        alert("!" + a + " = " + b)
+    }
+    factorial(10);
+</script>
+</body>
+</html>
